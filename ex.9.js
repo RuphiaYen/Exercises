@@ -7,20 +7,11 @@ let clearBtn = document.querySelector('.clear')
 let cart = document.querySelector('.cart')
 
 
-function addToCart(food) {
-console.log('food', food)
+function addToCart(event) {
+  const btn = event.target
   const cartItem = document.createElement('div')
-  /*cartItem.innerText = food
+  cartItem.innerText = btn.textContent
   cart.appendChild(cartItem)
-  if (btn === appleBtn) {
-    return 'apple'
-  } else if (btn === tomatoBtn) {
-    return 'tomato'
-  } else if (btn === eggsBtn) {
-    return 'eggs'
-  }
-  */
-  
 }
 
 function clearCart() {
